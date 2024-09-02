@@ -5,9 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big Bro Production || We Manage Your Show</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .hero-section {
+            position: relative; /* Kontainer relatif agar gambar absolut sesuai dengan ini */
+            border-bottom-left-radius: 300px; /* Sudut melengkung di kiri bawah */
+            min-height: 600px; /* Tinggi minimal hero section ditingkatkan */
+            background-color: #C2C2C2; /* Warna latar belakang */
+            padding: 4rem; /* Padding ditingkatkan untuk memberikan lebih banyak ruang di dalam hero section */
+            display: flex; /* Menggunakan Flexbox untuk penataan */
+            align-items: center; /* Memastikan konten vertikal berada di tengah */
+        }
+        .hero-image {
+            position: absolute; /* Posisi absolut untuk gambar */
+            right: 0; /* Tempatkan gambar di sisi kanan */
+            bottom: 0; /* Tempatkan gambar di bagian bawah */
+            max-width: 100%; /* Lebar maksimum gambar */
+            height: auto; /* Menjaga proporsi gambar */
+            max-height: 100%; /* Menjaga agar gambar tidak terlalu tinggi */
+        }
+        .hero-content {
+            z-index: 1; /* Teks di atas gambar */
+            max-width: 70%; /* Lebar maksimum konten teks */
+            margin-right: 200px;
+            margin-top: 100px;
+        }
+        .display-1 {
+            font-weight: bold; /* Membuat teks menjadi bold */
+            font-size: 90px; /* Ukuran font untuk h1 */
+            line-height: 1; /* Jarak antar baris */
+        }
+        .hero-section span:nth-of-type(1) {
+            color: #7B7B7B; /* Warna untuk kata pertama */
+        }
+        .hero-section span:nth-of-type(2) {
+            color: #000000; /* Warna untuk kata kedua */
+        }
+        .hero-section span:nth-of-type(3) {
+            color: #FFFFFF; /* Warna untuk kata ketiga */
+        }
+        .hero-section span:nth-of-type(4) {
+            color: #7B7B7B; /* Warna untuk kata ketiga */
+        }
+        .services-section {
+            text-align: center; /* Teks berada di tengah */
+            padding: 4rem 1rem; /* Padding untuk memberikan ruang di sekitar teks */
+        }
+        .services-section h1 {
+            font-size: 3rem; /* Ukuran font untuk h1 */
+            font-weight: bold; /* Membuat teks menjadi bold */
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,8 +83,36 @@
             </ul>
           </div>
         </div>
-      </nav>
-</body>
+    </nav>
+    <!-- Navbar End -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Hero Section Start -->
+    <section class="hero-section text-white">
+        <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center hero-content">
+            <!-- Teks Hero -->
+            <div class="text-center text-lg-start text-uppercase">
+                <h1 class="display-1">
+                    <span>We</span>
+                    <span>Manage</span>
+                    <span>Your Show</span>
+                    <span>.</span>
+                </h1>
+            </div>
+            <!-- Gambar Hero -->
+            <img src="img/hero.png" alt="Hero Image" class="hero-image">
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Services Section Start -->
+    <section class="services-section">
+        <h1>Our Services.</h1>
+    </section>
+    <!-- Services Section End -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
 </html>
