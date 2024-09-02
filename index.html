@@ -7,52 +7,77 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <style>
         .hero-section {
-            position: relative; /* Kontainer relatif agar gambar absolut sesuai dengan ini */
-            border-bottom-left-radius: 300px; /* Sudut melengkung di kiri bawah */
-            min-height: 600px; /* Tinggi minimal hero section ditingkatkan */
-            background-color: #C2C2C2; /* Warna latar belakang */
-            padding: 4rem; /* Padding ditingkatkan untuk memberikan lebih banyak ruang di dalam hero section */
-            display: flex; /* Menggunakan Flexbox untuk penataan */
-            align-items: center; /* Memastikan konten vertikal berada di tengah */
+            position: relative;
+            border-bottom-left-radius: 300px;
+            min-height: 600px;
+            background-color: #C2C2C2;
+            padding: 4rem;
+            display: flex;
+            align-items: center;
         }
         .hero-image {
-            position: absolute; /* Posisi absolut untuk gambar */
-            right: 0; /* Tempatkan gambar di sisi kanan */
-            bottom: 0; /* Tempatkan gambar di bagian bawah */
-            max-width: 100%; /* Lebar maksimum gambar */
-            height: auto; /* Menjaga proporsi gambar */
-            max-height: 100%; /* Menjaga agar gambar tidak terlalu tinggi */
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
         }
         .hero-content {
-            z-index: 1; /* Teks di atas gambar */
-            max-width: 70%; /* Lebar maksimum konten teks */
+            z-index: 1;
+            max-width: 70%;
             margin-right: 200px;
             margin-top: 100px;
         }
         .display-1 {
-            font-weight: bold; /* Membuat teks menjadi bold */
-            font-size: 90px; /* Ukuran font untuk h1 */
-            line-height: 1; /* Jarak antar baris */
+            font-weight: bold;
+            font-size: 90px;
+            line-height: 1;
         }
         .hero-section span:nth-of-type(1) {
-            color: #7B7B7B; /* Warna untuk kata pertama */
+            color: #7B7B7B;
         }
         .hero-section span:nth-of-type(2) {
-            color: #000000; /* Warna untuk kata kedua */
+            color: #000000;
         }
         .hero-section span:nth-of-type(3) {
-            color: #FFFFFF; /* Warna untuk kata ketiga */
+            color: #FFFFFF;
         }
         .hero-section span:nth-of-type(4) {
-            color: #7B7B7B; /* Warna untuk kata ketiga */
+            color: #7B7B7B;
         }
         .services-section {
-            text-align: center; /* Teks berada di tengah */
-            padding: 4rem 1rem; /* Padding untuk memberikan ruang di sekitar teks */
+            position: relative;
+            text-align: center;
+            padding: 4rem 1rem;
         }
         .services-section h1 {
-            font-size: 3rem; /* Ukuran font untuk h1 */
-            font-weight: bold; /* Membuat teks menjadi bold */
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+            position: relative;
+        }
+        .services-section .our-text {
+            position: absolute;
+            top: -1rem; /* Jarak dari atas */
+            left: 500px; /* Jarak dari kiri */
+            font-size: 32px; /* Ukuran font untuk "Our" */
+            color: #7B7B7B; /* Warna untuk kata "Our" */
+            z-index: 1; /* Pastikan teks "Our" berada di atas */
+        }
+        .services-section .services-text {
+            position: relative;
+            top: 10px;
+            font-size: 48px; /* Ukuran font untuk "Services" */
+            color: #000000; /* Warna untuk kata "Services" */
+            z-index: 0; /* Pastikan teks "Services" berada di bawah */
+        }
+        .services-section .dot-text {
+            position: relative;
+            top: 10px;
+            font-size: 48px; /* Ukuran font untuk "Services" */
+            color: #7B7B7B; /* Warna untuk kata "Services" */
+            z-index: 0; /* Pastikan teks "Services" berada di bawah */
         }
     </style>
 </head>
@@ -106,12 +131,14 @@
 
     <!-- Services Section Start -->
     <section class="services-section">
-        <h1>Our Services.</h1>
+        <h1 class="text-uppercase">
+            <span class="our-text">Our</span>
+            <span class="services-text">Services</span>
+            <span class="dot-text">.</span>
+        </h1>
+        
     </section>
     <!-- Services Section End -->
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
