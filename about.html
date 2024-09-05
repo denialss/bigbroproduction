@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big Bro Production || We Manage Your Show</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         .hero-section {
             position: relative;
@@ -79,14 +80,20 @@
             color: #7B7B7B; /* Warna untuk kata "Services" */
             z-index: 0; /* Pastikan teks "Services" berada di bawah */
         }
-        .image-fader {
-            max-width: 100%;
-            height: auto;
-            border-radius: 20px;
+
+        .bg-primary {
+            background-color: #C2C2C2!important;
         }
-        .fader {
-            max-width: 30%;
-            height: auto;
+
+        .card {
+            border: none;
+            border-radius: 100px 100px 50px 50px;
+            padding-bottom: 20px;
+        }
+
+        .card-text {
+            font-weight: bold;
+            
         }
     </style>
 </head>
@@ -100,13 +107,13 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
             <ul class="navbar-nav text-uppercase m-2">
               <li class="nav-item mx-3">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link active" href="about.html">About Us</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link" href="clients.html">Clients</a>
@@ -137,31 +144,6 @@
         </div>
     </section>
     <!-- Hero Section End -->
-
-    <!-- Services Section Start -->
-    <section class="services-section">
-        <h1 class="text-uppercase mt-5">
-            <span class="our-text">Our</span>
-            <span class="services-text">Services</span>
-            <span class="dot-text">.</span>
-        </h1>
-        <div class="services-content mt-5 container">
-            <div class="row justify-content-center">
-                <div class="col-lg-3">
-
-                </div>
-                <!-- Kolom Kiri (Gambar) -->
-                <div class="col-lg-5 d-flex justify-content-end">
-                    <img src="img/tes.jpg" alt="Service Image" class="image-fader">
-                </div>
-                <!-- Kolom Kanan (Slider Vertikal) -->
-                <div class="col-lg-4 d-flex justify-content-start">
-                    <img src="img/fader1.png" alt="Service Image" class="fader">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Section End -->
 
 
     <footer>
